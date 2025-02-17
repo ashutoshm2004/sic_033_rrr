@@ -30,4 +30,5 @@ sugercane_sales     =   (45*(80/5)*1000)*4000
 overall_sales       =   tomatoes1_sales + tomatoes2_sales + potatoes_sales + cabbage_sales + sunflowers_sales + sugercane_sales
 
 print(overall_sales)
+print("-"*50)
 
