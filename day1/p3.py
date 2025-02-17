@@ -14,6 +14,7 @@
 # 3. Compute the tax payable using the appropriate tax slabs.
 # 4. Apply any applicable standard deductions and rebates.
 # 5. Generate reports detailing gross salary, taxable income, tax payable, and net salary.
+#------------------------------------------------------------------------------------------
 # Level 1: Basic Input and Salary Calculation
 # Objective: Capture employee details and calculate the gross salary.
 # Tasks:
@@ -28,6 +29,13 @@
 # o Annual Gross Salary = (Gross Monthly Salary × 12) + Bonus
 # • Output:
 # o Display the employee details, gross monthly salary, and annual gross salary.
+#---------------------------------------------------------------------------------------------
+# Level 2: Taxable Income Calculation
+# Objective: Calculate taxable income after standard deductions.
+# Tasks:
+# • Deduct a Standard Deduction of ₹50,000 from the annual gross salary.
+# • Compute the Taxable Income and display all intermediate calculations.
+# Output: Display gross salary, standard deduction and taxable income.
 
 
 name                    = input("Enter the name of the employee: ")
@@ -36,10 +44,18 @@ basic_monthly_salary    = float(input("Enter the Basic Monthly Salary: "))
 special_allowance       = float(input("Enter the Special Monthly Allowance: "))
 bonus_percentage        = float(input("Enter the annual bonus: "))
 
-gross_monthly_salary = basic_monthly_salary + special_allowance
-annual_gross_salary = (gross_monthly_salary*12) + (bonus_percentage*gross_monthly_salary)
+gross_monthly_salary    = basic_monthly_salary + special_allowance
+annual_gross_salary     = (gross_monthly_salary*12) + (bonus_percentage*(gross_monthly_salary*12)/100)
+taxable_income          = annual_gross_salary - 50000
 
-print("Employee Name: ", name)
-print("Employee ID: ", emp_id)
-print("Gross Monthly Salary: ", gross_monthly_salary)
-print("Annual Gross Salary: ",annual_gross_salary)
+print("Employee Name            : ", name)
+print("Employee ID              : ", emp_id)
+print("Gross Monthly Salary     : ", gross_monthly_salary)
+print("Annual Gross Salary      : ",annual_gross_salary)
+print("Taxable Income           :",taxable_income)
+print("-"*50)
+print(f'%-20s : {name}' %("Employee Name"))
+print(f'%-20s : {emp_id}' %("Employee ID"))
+print(f'%-20s : {gross_monthly_salary}' %("Gross Monthly Salary"))
+print(f'%-20s : {annual_gross_salary}' %("Annual Gross Salary"))
+print(f'%-20s : {taxable_income}' %("Taxable Income"))
