@@ -53,7 +53,9 @@ print("Employee ID              : ", emp_id)
 print("Gross Monthly Salary     : ", gross_monthly_salary)
 print("Annual Gross Salary      : ",annual_gross_salary)
 print("Taxable Income           :",taxable_income)
+
 print("-"*50)
+
 print(f'%-20s : {name}' %("Employee Name"))
 print(f'%-20s : {emp_id}' %("Employee ID"))
 print(f'%-20s : {gross_monthly_salary}' %("Gross Monthly Salary"))
