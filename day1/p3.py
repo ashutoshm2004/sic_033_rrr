@@ -53,7 +53,7 @@
 # Output:
 # • Display a detailed tax breakdown, including slabs, cess, and total tax payable.
 
-# -----------------------------------------------
+# ----------------------------------------------------------------------------------------------
 # Level 4: Net Salary Calculation
 # Objective: Calculate annual net salary after tax deductions.
 # Tasks:
@@ -62,7 +62,7 @@
 # o Annual Gross Salary
 # o Total Tax Payable (including cess)
 # o Annual Net Salary
-# --------------------------------------------
+# --------------------------------------------------------------------------------------------------
 # Level 6: Input Validation Rules
 # Objective: Validate all inputs to ensure accuracy and correctness.
 # Validation Rules:
@@ -81,7 +81,7 @@
 # o Provide re-entry prompts for invalid data.
 # Output:
 # • Indicate if any inputs are invalid and prompt for correction.
-# --------------------------------------------------
+# -----------------------------------------------------------------------------------------------------
 # Level 5: Report Generation
 # Objective: Generate a detailed report for employees.
 # Tasks:
@@ -105,7 +105,7 @@
 # Taxable Income ₹9,70,000
 # Tax Payable ₹76,800
 # Annual Net Salary ₹9,43,200
-
+#----------------------------------------------------------------------------------------------------------
 
 name                    = input("Enter the name of the employee: ")
 emp_id                  = input("Enter the employee ID: ") 
