@@ -147,6 +147,7 @@ elif (taxable_income>1500000):
 if (taxable_income<=700000):
     rebate_p=100
     tax_payable=0
+    
 else:
     reabate_p=0
     tax_payable=taxable_income*tax_p /100
