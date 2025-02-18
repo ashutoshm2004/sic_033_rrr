@@ -125,11 +125,11 @@ print("Taxable Income           : ",taxable_income)
 
 print("-"*50)
 
-print(f'%-20s : {name}' %("Employee Name"))
-print(f'%-20s : {emp_id}' %("Employee ID"))
-print(f'%-20s : {gross_monthly_salary}' %("Gross Monthly Salary"))
-print(f'%-20s : {annual_gross_salary}' %("Annual Gross Salary"))
-print(f'%-20s : {taxable_income}' %("Taxable Income"))
+print(f'%20s : {name}' %("Employee Name"))
+print(f'%20s : {emp_id}' %("Employee ID"))
+print(f'%20s : {gross_monthly_salary}' %("Gross Monthly Salary"))
+print(f'%20s : {annual_gross_salary}' %("Annual Gross Salary"))
+print(f'%20s : {taxable_income}' %("Taxable Income"))
 
 if (taxable_income>0 and taxable_income<=300000):
     tax_p=0
