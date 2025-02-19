@@ -61,3 +61,4 @@ print(f'%-20s : {emp_id}' %("Employee ID"))
 print(f'%-20s : {gross_monthly_salary}' %("Gross Monthly Salary"))
 print(f'%-20s : {annual_gross_salary}' %("Annual Gross Salary"))
 print(f'%-20s : {taxable_income}' %("Taxable Income"))
+
