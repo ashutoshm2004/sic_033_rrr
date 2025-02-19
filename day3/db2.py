@@ -2,7 +2,7 @@ import pymysql
 
 def connect_db():
     try:
-        connection = pymysql.Connect(host='localhost', port=3306, user='root', password='Root12355', database='nithin_db', charset='utf8')
+        connection = pymysql.Connect(host='localhost', port=3306, user='root', password='abcd1234', database="students",charset='utf8')
         print('DB connected')
         return connection
     except:
@@ -48,3 +48,5 @@ def insert_row():
     cursor.execute(query, person)
     cursor.close()
     disconnect_db(connection)
+
+insert_row()
