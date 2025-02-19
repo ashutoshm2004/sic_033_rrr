@@ -24,7 +24,7 @@ def create_db():
     print('DB created')
     disconnect_db(connection)
 
-def create_db():
+def create_table():
     connection = connect_db()
     query = "create table IF NOT EXISTS persons(id int primary key, name varchar(32) not null, gender char check(gender in('m','M', 'f','F')), location varchar(32), dob datetime);"
     cursor = connection.cursor()
