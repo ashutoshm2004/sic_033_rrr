@@ -1,16 +1,20 @@
 import pymysql
+
 def connect_db():
     try:
-        connection = pymysql.Connect(host='localhost', port=34306, user='root', password='abcd1234', database='persons')
-        print('Database Connected')
+        connection = pymysql.Connect(host='localhost', port=3306, user='root', password='Root12355', database='nithin_db', charset='utf8')
+        print('DB connected')
         return connection
     except:
-        print("Connection failed")  
+        print('DB connection failed')
 
 def disconnect_db(connection):
-    connection.close()
-    print('Database Disconnected')
+    try:
+        connection.close()
+        print('DB dis-connected')
+    except:
+        print('Error while disconnecting DB')
 
-connection=connect_db()
+connection = connect_db()
 if connection:
     disconnect_db(connection)
