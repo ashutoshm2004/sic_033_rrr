@@ -1,7 +1,7 @@
 import pymysql
 def connect_db():
     try:
-        connection = pymysql.Connect(host='localhost', port=3306, user='root', password='abcd1234', database='persons')
+        connection = pymysql.Connect(host='localhost', port=34306, user='root', password='abcd1234', database='persons')
         print('Database Connected')
         return connection
     except:
