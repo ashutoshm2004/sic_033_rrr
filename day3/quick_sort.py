@@ -3,7 +3,7 @@ def parition_array(numbers, low, high):
     pivot=numbers[high]
     for i in range(low, high):
         if numbers[low] < numbers[high]:
-            numbers[i], numbers[j]=  numbers[j], numbers[i]
+            numbers[i], numbers[j] =  numbers[j], numbers[i]
             j+=1
     numbers[j], numbers[high] = numbers[high], numbers[j]
     return j
