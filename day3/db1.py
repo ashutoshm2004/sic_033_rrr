@@ -12,4 +12,5 @@ def disconnect_db(connection):
     print('Database Disconnected')
 
 connection=connect_db()
-disconnect_db(connection)
+if connection:
+    disconnect_db(connection)
