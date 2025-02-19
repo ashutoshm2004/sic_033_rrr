@@ -20,14 +20,15 @@
 # b. Sales realisation from chemical-free farming at the end of 11 months?
 
 
-tomatoes1_sales=(0.3*(80/5)*10*(80/5)*1000)*7
-tomatoes2_sales=(0.7*(80/5)*12*(80/5)*1000)*7
-potatoes_sales=(10*(80/5)*1000)*20
-cabbage_sales=(14*(80/5)*1000)*24
-sunflowers_sales=(0.7*(80/5)*1000)*200
-sugercane_sales=(45*(80/5)*1000)*4000
+tomatoes1_sales     =   (0.3*(80/5)*10*1000)*7
+tomatoes2_sales     =   (0.7*(80/5)*12*1000)*7
+potatoes_sales      =   (10*(80/5)*1000)*20
+cabbage_sales       =   (14*(80/5)*1000)*24
+sunflowers_sales    =   (0.7*(80/5)*1000)*200
+sugercane_sales     =   (45*(80/5)*1000)*4000
 
-overall_sales=tomatoes1_sales + tomatoes2_sales + potatoes_sales + cabbage_sales + sunflowers_sales + sugercane_sales
+overall_sales       =   tomatoes1_sales + tomatoes2_sales + potatoes_sales + cabbage_sales + sunflowers_sales + sugercane_sales
 
 print(overall_sales)
+print("-"*50)
 
