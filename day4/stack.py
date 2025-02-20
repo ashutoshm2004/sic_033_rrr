@@ -45,7 +45,6 @@ class Menu:
             choice = int (input("1.Push 2.Pop 3.Display 4.Exit Your choice: "))
             menu = self.get_menu(stack)
             menu.get(choice, self.invalid_choice)()
-        print("~End~")
 
     def invalid_choice(self):
         print("Try again!")
