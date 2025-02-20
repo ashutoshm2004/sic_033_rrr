@@ -18,7 +18,7 @@ class Event:
         print("Try again!")
 
 class Menu:
-    def __init__(self, events):
+    def __init__(self):
         pass
 
     def get_menu(self, events):
@@ -29,17 +29,18 @@ class Menu:
             4: events.thursday,
             5: events.friday
         }
+        return menu
     
     def run_menu(self):
+        event = Event()
         while True:
             choice = int (input("1.Monday 2.Tuesday 3.Wednesday 4.Thursday 5.Friday Your choice: "))
             if choice == -1:
                 break
-            menu.get(choice, events.other_choice)()
+            menu = self.get_menu(event)
+            menu.get(choice, event.other_choice)()
         print("~End~")
 
 
-    
-event = Event()
-menu = Menu(event)
+menu = Menu()
 menu.run_menu()
