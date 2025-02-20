@@ -17,7 +17,7 @@ def disconnect_db(connection):
 
 def create_db():
     connection = connect_db()
-    query = 'create database IF NOT EXISTS nithin_db;'
+    query = 'CREATE DATABASE IF NOT EXISTS persons;'
     cursor = connection.cursor()
     cursor.execute(query)
     cursor.close()
@@ -50,3 +50,4 @@ def insert_row():
     disconnect_db(connection)
 
 create_db()
+create_table()
