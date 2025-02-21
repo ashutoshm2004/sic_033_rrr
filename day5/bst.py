@@ -10,7 +10,7 @@ class Node:
 class Bst:
     def __init__(self):
         self.root = None
-        print('An empty Bst is created')
+        print('An empty BST is created')
 
     def add_node(self):
         data = int(input('Enter data of the new node: '))
@@ -32,7 +32,7 @@ class Bst:
             temp2.right = node
 
     def delete_node(self):
-        while temp1.data != 
+        pass
 
     def inorder(self, root):
         if root:
