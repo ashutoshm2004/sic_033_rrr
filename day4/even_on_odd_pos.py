@@ -21,4 +21,4 @@ def sum_of_odd_placed_even_digits(number):
 input_number = int(sys.argv[1])
 sum_of_digits = sum_of_odd_placed_even_digits(input_number)
 
-print(f'Sum of Odd placed Even digits of {input_number} is {sum_of_digits}')
+print(f'Sum of Odd placed Even digits of {input_number} is {sum_of_digits}') 
