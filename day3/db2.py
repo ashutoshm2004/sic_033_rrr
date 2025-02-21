@@ -12,7 +12,7 @@ def disconnect_db(connection):
     try:
         connection.close()
         print('DB dis-connected')
-    except:
+    except: 
         print('Error while disconnecting DB')
 
 def create_db():
