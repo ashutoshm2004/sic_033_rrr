@@ -32,7 +32,7 @@ class Bst:
             temp2.right = node
 
     def delete_node(self):
-        while temp1.data != 
+        pass
 
     def inorder(self, root):
         if root:
