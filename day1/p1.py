@@ -31,4 +31,3 @@ overall_sales       =   tomatoes1_sales + tomatoes2_sales + potatoes_sales + cab
 
 print(overall_sales)
 print("-"*50)
-
