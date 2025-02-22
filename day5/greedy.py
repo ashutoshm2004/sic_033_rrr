@@ -15,5 +15,5 @@ def findMin(cost):
 
 n = 897
 print("Following is minimal number",
-    "of change for", n, ": ", end = "")
+    "of change for", n, ": ",  end = "")
 findMin(n)
