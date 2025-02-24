@@ -22,7 +22,7 @@ class Linkedlist:
             nn.next = self.head
             self.head = nn
 
-        else:
+        else:  
             temp = self.head
             count = 0
             while temp is not None and count < position-1:
