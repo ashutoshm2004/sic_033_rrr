@@ -30,19 +30,41 @@ class Linkedlist:
                 return 
             nn.next = temp.next
             temp.next = nn
+
+    # CODE TO REVERSE  THE ENTIRE LINKED LIST IN PLACE (MERA CREATION)
+    # def reverse_list(self):
+    #     prev = None
+    #     current  = self.head
+    #     while current: #while current is not None #while current != None
+    #         next_node = current.next
+    #         current.next = prev
+    #         prev = current
+    #         current = next_node
+    #     self.head = prev
+
+    def display_rev(self):
+        temp = self.head
+        ll = []
+        while temp:
+            ll.append(temp.data)
+            temp = temp.next
+        for elem in ll[::-1]:
+            print(elem, end=" -> ")
     
 if __name__ == '__main__':
     ll = Linkedlist()
     while True:
-        ch = int (input("\nEnter 1 to enter data 0 to stop 2 to display: "))
+        ch = int (input("\nEnter 1.Enter data 2.Stop 3.Display 4.Reverse: "))
         match ch:
             case 1:
                 data, position = map(int, input("Enter the data and position: ").split())
                 ll.add_at_pos(data, position)
-            case 0:
-                break
             case 2:
+                break
+            case 3:
                 ll.display()
+            case 4:
+                ll.display_rev()
             case _:
                 print("Try again!")
             
