@@ -10,7 +10,10 @@ class Linkedlist:
     def display(self):
         temp = self.head
         while temp:
-            print(temp.data, end=" -> ")
+            if temp.next == None:
+                print(temp.data, end="")
+            else:
+                print(temp.data, end=" -> ")
             temp = temp.next
 
     def add_at_pos(self, data, position):
