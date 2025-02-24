@@ -34,7 +34,7 @@ class Linkedlist:
 if __name__ == '__main__':
     ll = Linkedlist()
     while True:
-        ch = int (input("Enter 1 to enter data 0 to stop 2 to display: "))
+        ch = int (input("\nEnter 1 to enter data 0 to stop 2 to display: "))
         match ch:
             case 1:
                 data, position = map(int, input("Enter the data and position: ").split())
@@ -44,6 +44,6 @@ if __name__ == '__main__':
             case 2:
                 ll.display()
             case _:
-                print("Try again: ")
+                print("Try again!")
             
         
