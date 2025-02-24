@@ -14,7 +14,7 @@ class Linkedlist:
                 print(temp.data, end="")
             else:
                 print(temp.data, end=" -> ")
-            temp = temp.next
+            temp = temp.next  
 
     def add_at_pos(self, data, position):
         nn = Node(data)
@@ -73,4 +73,3 @@ if __name__ == '__main__':
             
         
 
-        
