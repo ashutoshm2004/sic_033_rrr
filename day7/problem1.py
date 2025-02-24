@@ -9,8 +9,9 @@ class Linkedlist:
 
     def display(self):
         temp = self.head
-        while temp is not None:
-            
+        while temp:
+            print(temp.data, end=" -> ")
+            temp = temp.next
 
     def add_at_pos(self, data, position):
         nn = Node(data)
@@ -29,12 +30,20 @@ class Linkedlist:
                 return 
             nn.next = temp.next
             temp.next = nn
-
+    
 if __name__ == '__main__':
     ll = Linkedlist()
-    ll.add_at_pos(5,0)
-    ll.add_at_pos(10,1)
-    ll.add_at_pos(15,2)
-    ll.add_at_pos(20,3)
-    ll.add_at_pos(25,1)
-    ll.display()
+    while True:
+        ch = int (input("Enter 1 to enter data 0 to stop 2 to display: "))
+        match ch:
+            case 1:
+                data, position = map(int, input("Enter the data and position: ").split())
+                ll.add_at_pos(data, position)
+            case 0:
+                break
+            case 2:
+                ll.display()
+            case _:
+                print("Try again: ")
+            
+        
