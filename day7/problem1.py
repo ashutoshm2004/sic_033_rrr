@@ -70,7 +70,3 @@ if __name__ == '__main__':
                 ll.display_rev()
             case _:
                 print("Try again!")
-            
-        
-
-#*******
