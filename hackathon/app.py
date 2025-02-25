@@ -9,7 +9,7 @@ import base64
 app = Flask(__name__)
 
 # Load the dataset
-df = pd.read_csv(r"C:\Users\SIC\Documents\Python - SIC\sic_033\hackathon\india_births_2011_2021.csv")
+df = pd.read_csv(r"C:\Users\ashut\OneDrive\Documents\GitHub\sic_033\hackathon\india_births_2011_2021.csv")
 
 # Home page
 @app.route('/')

@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the CSV data
-df = pd.read_csv(r"C:\Users\SIC\Documents\Python - SIC\sic_033\hackathon\india_births_2011_2021.csv")
+df = pd.read_csv(r"C:\Users\ashut\OneDrive\Documents\GitHub\sic_033\hackathon\india_births_2011_2021.csv")
 
 # Function to visualize Normal Delivery Percentage vs C-section Deliveries
 def normal_vs_csection():
