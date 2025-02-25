@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load the CSV data (replace with your file path)
+# Load the CSV data
 df = pd.read_csv(r"C:\Users\SIC\Documents\Python - SIC\sic_033\hackathon\india_births_2011_2021.csv")
 
 # Function to visualize Normal Delivery Percentage vs C-section Deliveries
@@ -16,7 +16,7 @@ def normal_vs_csection():
 # Function to determine which part of the country has more C-section deliveries
 def csection_by_state():
     csection_state = df[df['Type of Delivery'] == 'C-Section']['State of Birth'].value_counts()
-    csection_state.plot(kind='bar', color='purple', title="C-Section Deliveries by State")
+    csection_state.plot(kind='bar', color= 'purple', title="C-Section Deliveries by State")
     plt.xlabel("State")
     plt.ylabel("Number of C-Section Deliveries")
     plt.show()
